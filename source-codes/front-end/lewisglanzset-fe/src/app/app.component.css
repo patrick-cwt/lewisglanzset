@@ -1,0 +1,9 @@
+.lbl-app-title {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}

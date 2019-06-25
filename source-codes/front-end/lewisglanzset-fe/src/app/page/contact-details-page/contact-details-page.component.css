@@ -1,0 +1,44 @@
+.lbl-error-msg {
+    font-size: 16px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.pnl-contact-details {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.lbl-contact-details {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.pnl-cd-fields {
+    width: 50%;
+    margin: auto;
+}
+
+.pnl-cd-txt {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.pnl-cd-lbl {
+    margin-bottom: 5px;
+}
+
+.pnl-cd-buttons {
+    width: 50%;
+    margin: auto;
+}
+
+.btn-cd {
+    width: 49%;
+}
+
+.btn-cd-back {
+    float: right;
+}

@@ -1,0 +1,52 @@
+.lbl-login-msg-error {
+    font-size: 14px;
+    color: red;
+    text-align: center;
+}
+
+.lbl-login-msg-error, 
+.pnl-lbl, 
+.pnl-txt, 
+.pnl-button {
+    margin-bottom: 10px;
+}
+
+.pnl-login-fields {
+    width: 50%;
+    margin: auto;
+}
+
+.pnl-lbl {
+}
+
+.pnl-txt {
+    text-align: center;
+}
+
+.pnl-login {
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 1px solid black;
+}
+
+.pnl-button {
+    text-align: center;
+}
+
+.btn-login, 
+.btn-signup {
+    width: 49%;
+}
+
+.btn-signup {
+    float: right;
+}
+
+.txt-login {
+    width: 100%;
+}
+
+.pnl-login-buttons {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}

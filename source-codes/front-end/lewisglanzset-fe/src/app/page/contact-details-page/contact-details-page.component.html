@@ -1,0 +1,23 @@
+<div class="pnl-contact-details container">
+  <div class="lbl-contact-details">
+      Contact Details
+  </div>
+  <div class="pnl-cd-fields">
+    <div class="pnl-cd-lbl">Contact ID:</div>
+    <div><input class="pnl-cd-txt" #txtId type="text" disabled value="{{contact.contactId}}"/></div>
+    <div class="pnl-cd-lbl">Name:</div>
+    <div><input class="pnl-cd-txt" #txtName type="text" value="{{contact.name}}"/>
+        <div class="lbl-error-msg">{{getValidationError('name')}}</div></div>
+    <div class="pnl-cd-lbl">Email:</div>
+    <div><input class="pnl-cd-txt" #txtEmail type="text" value="{{contact.email}}"/>
+        <div class="lbl-error-msg">{{getValidationError('email')}}</div></div>
+    <div class="pnl-cd-lbl">Telephone:</div>
+    <div><input class="pnl-cd-txt" #txtTelephone type="text" value="{{contact.telephone}}"/>
+        <div class="lbl-error-msg">{{getValidationError('telephone')}}</div></div>
+  </div>
+  <div class="pnl-cd-buttons">
+    <button class="btn-cd" *ngIf="addMode" (click)="onSaveAdd(txtName, txtEmail, txtTelephone);" (focusout)="reset();">Save</button>
+    <button class="btn-cd" *ngIf="updateMode" (click)="onSaveUpdate(txtName, txtEmail, txtTelephone);" (focusout)="reset();">Update</button>
+    <button class="btn-cd btn-cd-back" (click)="onBackToHome();" (focusout)="reset();">Back to Home</button>
+  </div>
+</div>

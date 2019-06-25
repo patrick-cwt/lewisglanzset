@@ -1,0 +1,75 @@
+.lbl-error-msg {
+    font-size: 16px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.lbl-successful-registration {
+    font-size: 18px;
+    color: green;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.lbl-unsuccessful-registration {
+    font-size: 18px;
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pnl-sign-up {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.lbl-sign-up {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lbl-su {
+    margin-bottom: 5px;
+}
+
+.txt-su {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.pnl-su-fields {
+    width: 50%;
+    margin: auto;
+}
+
+.pnl-su-buttons {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-su-submit, 
+.btn-su-back {
+    width: 49%;
+}
+
+.btn-su-back {
+    float: right;
+}
+
+.pnl-signup-msg {
+    width: 50%;
+    margin: auto;
+}
+
+.btn-su-regback, 
+.btn-su-sign-in {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pnl-su-reg {
+    text-align: center;
+}

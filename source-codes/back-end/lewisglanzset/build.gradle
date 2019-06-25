@@ -1,0 +1,37 @@
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}
+
+addProperty('app-group', 'com.jpgl.lewisglanzset')
+addProperty('app-version', '1.0-SNAPSHOT')
+addProperty('app-target-version', 1.8)
+addProperty('app-source-version', 1.8)
+
+addProperty('junit', 'junit:junit:4.12')
+addProperty('guava', 'com.google.guava:guava:23.0')
+addProperty('commons-math', 'org.apache.commons:commons-math3:3.6.1')
+
+addProperty('postgres', 'org.postgresql:postgresql:42.2.5')
+addProperty('mongodb-data-version', '1.2.0.RELEASE')
+addProperty('mongodb-driver', 'org.mongodb:mongo-java-driver:2.11.0')
+addProperty('hikari-cp', 'com.zaxxer:HikariCP:3.3.0')
+addProperty('hibernate-core', 'org.hibernate:hibernate-core:5.4.2.Final')
+
+addProperty('spring-version', '2.1.5.RELEASE')
+addProperty('spring-boot-starter-web', 'org.springframework.boot:spring-boot-starter-web:' + property('spring-version'))
+addProperty('spring-boot-starter-data', 'org.springframework.boot:spring-boot-starter-data-jpa:' + property('spring-version'))
+addProperty('spring-boot-starter-data-mongodb', 'org.springframework.boot:spring-boot-starter-data-mongodb:' + property('spring-version'))
+addProperty('spring-boot-starter-security', 'org.springframework.boot:spring-boot-starter-security:' + property('spring-version'))
+
+addProperty('jwt', 'com.auth0:java-jwt:3.4.0')
+addProperty('gson', 'com.google.code.gson:gson:2.8.5')
+
+group property('app-group')
+version property('app-version')
+
+def addProperty(name, title) {
+    rootProject.extensions.add(name, title)
+}

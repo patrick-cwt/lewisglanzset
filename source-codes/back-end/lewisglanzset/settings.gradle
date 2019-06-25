@@ -1,0 +1,8 @@
+rootProject.name = 'lewisglanzset'
+include 'lgs-app'
+include 'lgs-common'
+include 'lgs-controller'
+include 'lgs-service'
+include 'lgs-repository'
+include 'lgs-database'
+include 'lgs-security'

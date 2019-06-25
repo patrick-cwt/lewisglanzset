@@ -1,0 +1,15 @@
+<div class="container pnl-login">
+  <div class="pnl-login-fields">
+    <div class="lbl-login-msg-error">{{message}}</div>
+    <div class="pnl-lbl">Username:</div>
+    <div class="pnl-txt"><input class="txt-login" #username type="text" /></div>
+    <div class="pnl-lbl">Password:</div>
+    <div class="pnl-txt"><input class="txt-login" #password type="password" /></div>
+  
+    <div class="pnl-login-buttons">
+      <button class="btn-login" (click)="onSignIn(username, password);"
+        (focusout)="reset();">Sign In</button>
+      <button class="btn-signup" (click)="onSignUp();">Sign Up!</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+plugins {
+	id "java"
+	id "org.springframework.boot" version "2.1.5.RELEASE"
+}
+
+springBoot {
+	mainClassName = 'com.jpgl.lgs.LewisGlanzSoftwareEngineeringTest'
+}
+
+configurations {
+	providedRuntime
+}
+
+group property('app-group')
+version property('app-version')
+
+targetCompatibility = property('app-target-version')
+sourceCompatibility = property('app-source-version')
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':lgs-common')
+    compile project(':lgs-controller')
+    compile project(':lgs-service')
+    compile project(':lgs-database')
+    compile project(':lgs-repository')
+    compile project(':lgs-security')
+    testCompile property('junit')
+}

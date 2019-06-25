@@ -1,0 +1,15 @@
+.tbl-contact-records {
+    border: 1px solid gray;
+}
+
+.lbl-contact-records {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.pnl-contact-records {
+    border: 1px solid gray;
+    padding: 10px;
+}

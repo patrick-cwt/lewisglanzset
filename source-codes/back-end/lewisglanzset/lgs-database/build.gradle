@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group property('app-group')
+version property('app-version')
+
+targetCompatibility = property('app-target-version')
+sourceCompatibility = property('app-source-version')
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':lgs-common')
+    compile property('spring-boot-starter-data-mongodb')
+    testCompile property('junit')
+}

@@ -1,0 +1,11 @@
+.pnl-nav {
+    border: 1px solid gray;
+    padding: 10px;
+    background: black;
+    color: white;
+}
+
+.lnk-logout,
+.navbar-brand {
+    color: white;
+}

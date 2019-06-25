@@ -1,0 +1,42 @@
+<div class="pnl-sign-up container">
+  <div class="lbl-sign-up">
+    Sign Up
+  </div>
+  <div *ngIf="userExistMsg" class="lbl-unsuccessful-registration">User Already Exist!</div>
+  <div class="pnl-su-fields" *ngIf="signInFieldsShown">
+    <div class="lbl-su">Username: </div>
+    <div><input class="txt-su" #txtUsername type="text"/>
+      <div class="lbl-error-msg">{{getValidationError('username')}}</div></div>
+    <div class="lbl-su">Password: </div>
+    <div><input class="txt-su" #txtPassword1 type="password"/>
+      <div class="lbl-error-msg">{{getValidationError('password1')}}</div></div>
+    <div class="lbl-su">Confirm Password: </div>
+    <div><input class="txt-su" #txtPassword2 type="password"/>
+      <div class="lbl-error-msg">{{getValidationError('password2')}}</div></div>
+    <div class="lbl-su">First Name: </div>
+    <div><input class="txt-su" #txtFirstName type="text"/>
+      <div class="lbl-error-msg">{{getValidationError('firstname')}}</div></div>
+    <div class="lbl-su">Last Name: </div>
+    <div><input class="txt-su" #txtLastName type="text"/>
+      <div class="lbl-error-msg">{{getValidationError('lastname')}}</div></div>
+  
+    <div class="pnl-su-buttons">
+      <button class="btn-su-submit" (click)="onSubmit(txtUsername, txtPassword1, txtPassword2, 
+          txtFirstName, txtLastName);"
+          (focusout)="reset();">Submit</button>
+      <button class="btn-su-back" (click)="onBackToLogin();"
+          (focusout)="reset();">Back to Login</button>
+    </div>
+  </div>
+  <div class="pnl-signup-msg">
+    <div *ngIf="signInSuccessful">
+      <div><div class="lbl-successful-registration">Successful Registration!</div></div>
+      <div class="pnl-su-reg"><button class="btn-su-signin" (click)="onSignInNow();">Sign In Now!</button></div>
+    </div>
+    <div *ngIf="signInUnsuccessful">
+      <div><div class="lbl-unsuccessful-registration">Unable to register user</div></div>
+      <div class="pnl-su-reg"><button class="btn-su-regback" (click)="onBackToLogin();">Back to login</button></div>
+    </div>
+  </div>
+</div>
+
